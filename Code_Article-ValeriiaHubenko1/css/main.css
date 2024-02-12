@@ -1,0 +1,212 @@
+/* 
+Colors Time Machine Travel image
+Blue: #4996ff
+Gray: #979c9f
+Light-blue: #bfd8ff
+
+Customer Experience Agency
+
+Red: #ec5648
+Blue: #3b72ab
+Light-blue: #d4e8ff
+Pink: #cf4abf
+
+*/
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+  @font-face {
+    font-family: 'OpenSans Italic';
+    src: url('../fonts/opensans/OpenSans-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style:italic;
+    font-stretch: 75% 145%;
+  }
+  
+  @font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/opensans/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+    font-stretch: 75% 145%;
+
+ 
+  }
+
+  html {
+font-size: 62.5%; 
+/*ROOT measurment for HTML file based on 100% of the basic font size 
+basic font size is usually 16px (100%)
+this basic font size is 10px (62.5%) 
+easier to caluculate rems 10px = 1rem
+Basic font size in rem: 1.6rem (if you want to refer to 16px)
+*/
+  }
+
+
+
+  body {
+font-size: 1.8rem;
+line-height: 2rem;
+font-family: 'OpenSans';
+background-color: #bfd8ff;
+font-variation-settings: 'wght' 400;
+
+ color:#000000;
+  }
+
+/*general*/ 
+  
+  img {
+width: 100%
+  }
+
+/*Fonts*/
+
+
+
+h1, h2, h3 {
+  font-family: 'OpenSans';
+  font-variation-settings: 'wght' 700;
+
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 4.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+/*Example font weight and width*/
+.special-title {
+  font-variation-settings: 'wght' 900;
+}
+
+/*Links and Buttons*/
+ 
+
+.btn {
+display: inline-block;
+background-color: #000000;
+color: #ffffff; 
+padding: 1rem 2rem 1.2rem 2rem;
+border: .2rem solid #000000;
+
+}
+.btn-big {
+  background-color: #4996ff;
+  color: #ffffff; 
+  padding: 2rem 4rem 2.2rem 4rem;
+  font-size: 3rem;
+  margin: 2rem 0;
+  margin-bottom: 8rem
+}
+
+ 
+
+.button-3 {
+  border: 2px solid transparent;
+ border-radius: 5rem;
+}
+.button-3:hover {
+  box-shadow: 8px 8px #99bdff;
+  transition: .3s;
+}
+
+/*Layout*/
+ 
+.wrapper {
+display: grid;
+column-gap: 3rem;
+grid-template-columns: 1fr;
+grid-template-rows: auto;
+grid-template-areas:
+"header  "
+" aside "
+" main "
+"footer";
+ 
+}
+
+aside, main, footer, header {
+  padding:  1.5rem;
+}
+ 
+aside, main {
+background-color: #ffffff;
+margin-top: 10rem ;
+margin-bottom: 10rem ;
+}
+
+ 
+
+/*Header*/
+header{
+  grid-area: header;
+  padding: 2rem 2rem;
+  background-color:#4996ff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+}
+/*Main*/
+aside {
+  grid-area: aside;
+}
+main {
+  grid-area: main;
+}
+/*Footer*/
+footer {
+  grid-area: footer;
+  padding: 2rem 2rem;
+  width: 100%;
+  background-color:#4996ff;
+}
+
+
+/*Media Queries*/
+
+@media only screen and (min-width: 860px) {
+  .wrapper {
+    display: grid;
+    grid-gap: 2rem 4rem;
+    column-gap: 3rem;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "header header header header header header"
+    " aside main main main . ."
+    "footer footer footer footer footer footer";
+    }
+     
+ 
+ 
+}
+
+@media only screen and (max-width: 1024px) {
+html {
+    font-size: 50%; } 
+}
+ 
+/*Layout*/
+
+ 
+
