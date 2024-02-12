@@ -63,8 +63,6 @@ font-variation-settings: 'wght' 400;
  color:#000000;
   }
 
-  Img { width: 100%}
-
 /*general*/ 
   
   img {
@@ -95,6 +93,7 @@ h2 {
 h3 {
   font-size: 1.8rem;
   line-height: 2.5rem;
+  padding-bottom: 0.8rem;
 }
 
 /*Example font weight and width*/
@@ -113,6 +112,7 @@ h3 {
    .row {
   display: flex;
   flex-direction: row;
+  margin-bottom: 1rem;
    }
   
    .date {
@@ -126,7 +126,7 @@ h3 {
    }
 
    .text{
-    margin-top: 0rem;
+    margin-top: 7rem;
   }
 
   P {
@@ -192,8 +192,8 @@ main {
 }
 
 .image1 {
-  margin-top: -7rem;
-  margin-bottom: -12.5rem;}
+  margin-top: -2rem;
+  margin-bottom: -11.5rem;}
 
 
 .image2 {
@@ -226,10 +226,13 @@ footer {
      
     aside, main {
       background-color: #ffffff;
-      margin-top: 8rem ;
-      margin-bottom: 8rem ;
+      margin-top: 10rem ;
+      margin-bottom: 10rem ;
       }
       
+   .text{
+    margin-top: 0rem;
+  }
  
 }
 
